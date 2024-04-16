@@ -1,0 +1,113 @@
+/* Region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --dc-primary: #0082F9;
+    --dc-dark: #1C1C1C;
+    --dc-light: #303030;
+    --dc-white: #FFFFFF;
+}
+
+.container {
+    width: 70%;
+    max-width: 1176px;
+    margin: auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem
+}
+
+
+img {
+    max-width: 100%;
+}
+
+/* Endregion Common */
+
+
+/* Region Header */
+header {
+    min-height: 60vh;
+
+    & .banner {
+        min-height: 1vh;
+        background-color: var(--dc-primary);
+
+        & .container {
+            display: flex;
+            justify-content: end;
+            gap: 2rem;
+        }
+
+        & span {
+            font-size: 10px;
+            color: var(--dc-white);
+            text-transform: uppercase;
+            padding: 0.25rem;
+        }
+    }
+
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .logo>img {
+            width: 60%;
+        }
+
+        & ul {
+            display: flex;
+            padding: 2rem 0;
+            gap: 1rem;
+
+            & li {
+                list-style: none;
+
+                & a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: var(--dc-light);
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        & .search {
+            display: flex;
+            padding: 0 1rem;
+
+            & #search {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom-color: var(--dc-primary);
+                margin: 0 0.5rem;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            & #search_button {
+                text-decoration: none;
+                border: none;
+            }
+        }
+    }
+}
+
+
+
+/* Endregion Header */
