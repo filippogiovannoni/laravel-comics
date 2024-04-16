@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('guests.welcome');
+    $comics = config('data');
+
+    return view('guests.welcome', compact('comics'));
 });
 
 Route::get('/product', function () {

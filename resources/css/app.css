@@ -26,7 +26,8 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1rem
+    margin: 0 -1rem;
+    padding: 1rem 0;
 }
 
 
@@ -34,12 +35,17 @@ img {
     max-width: 100%;
 }
 
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
+
 /* Endregion Common */
 
 
 /* Region Header */
 header {
-    min-height: 60vh;
+    max-height: 60vh;
 
     & .banner {
         min-height: 1vh;
@@ -108,6 +114,64 @@ header {
     }
 }
 
-
-
 /* Endregion Header */
+
+/* Region Main */
+main {
+    background-color: var(--dc-dark);
+
+    & .jumbotron {
+        background-image: url('../images/jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 35vh;
+        max-width: 100%;
+
+    }
+
+    & .comics {
+        padding-bottom: 2rem;
+
+        & .container>span {
+            background-color: var(--dc-primary);
+            color: var(--dc-white);
+            text-transform: uppercase;
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+
+        }
+    }
+
+
+    .card {
+        & span {
+            text-transform: uppercase;
+            color: var(--dc-white);
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        & img {
+            aspect-ratio: 1;
+            height: 130px;
+        }
+    }
+
+    .load {
+        text-align: center;
+
+        & a {
+            background-color: var(--dc-primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--dc-white);
+            padding: 0.5rem 3rem;
+        }
+    }
+}
+
+
+/* Endregion Main */
