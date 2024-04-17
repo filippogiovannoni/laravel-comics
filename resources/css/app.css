@@ -90,6 +90,10 @@ header {
                     font-size: 10px;
                     font-weight: bold;
                 }
+
+                & a.active {
+                    border-bottom: 2px solid var(--dc-primary);
+                }
             }
         }
 
@@ -202,6 +206,16 @@ main {
             }
         }
     }
+
+    #products {
+        height: 60vh;
+        position: relative;
+
+        & span {
+            color: var(--dc-white);
+        }
+    }
+
 }
 
 

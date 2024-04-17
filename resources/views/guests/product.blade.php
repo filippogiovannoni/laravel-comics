@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>This is the product page!</h1>
+    @include('partials.jumbotron')
+    <section id="products">
+        <div class="container">
+            <span>
+                This is the products page!
+            </span>
+        </div>
+    </section>
 @endsection

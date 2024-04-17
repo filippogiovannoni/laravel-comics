@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="jumbotron">
-    </div>
+    @include('partials.jumbotron')
     <div class="comics">
         <div class="container">
             <span>Current Series</span>
