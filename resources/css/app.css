@@ -154,7 +154,6 @@ main {
 
         & img {
             aspect-ratio: 1;
-            height: 130px;
         }
     }
 
@@ -169,6 +168,35 @@ main {
             font-weight: bold;
             color: var(--dc-white);
             padding: 0.5rem 3rem;
+        }
+    }
+
+    & .feature {
+        background-color: var(--dc-primary);
+
+
+        & ul {
+            display: flex;
+            padding: 2rem;
+
+            & li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding-left: 4rem;
+
+                & img {
+                    width: 20%;
+                }
+
+                & span {
+                    font-size: 10px;
+                    color: var(--dc-white);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }
