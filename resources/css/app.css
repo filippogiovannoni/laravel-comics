@@ -17,6 +17,7 @@ body {
     --dc-light: #303030;
     --dc-white: #FFFFFF;
     --dc-lighter: #959595;
+    --dc-success: #55BA59;
 }
 
 .container {
@@ -256,6 +257,42 @@ main {
                 bottom: 0px;
                 width: 100%;
                 text-align: center;
+            }
+        }
+
+        & .comic {
+
+            & h3 {
+                text-transform: uppercase;
+                margin: 3rem 0 1rem 0;
+            }
+
+            .price {
+                display: flex;
+                justify-content: space-between;
+                flex-grow: 2;
+            }
+
+            & .availability {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid var(--dc-dark);
+                padding: 0.5rem 1rem;
+                background-color: var(--dc-success);
+                color: var(--dc-white);
+                font-weight: bold;
+                font-size: 14px;
+
+                & span {
+                    color: var(--dc-white);
+                    padding: 0 1rem;
+                }
+            }
+
+            & p {
+                margin: 1rem 0;
+                color: var(--dc-lighter);
+                line-height: 1.5rem;
             }
         }
 
