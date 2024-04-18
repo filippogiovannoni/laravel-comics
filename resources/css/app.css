@@ -211,11 +211,10 @@ main {
     }
 
     #products {
-        height: 60vh;
         position: relative;
 
         & .container {
-            padding: 0 5rem;
+            padding: 0 4rem;
         }
 
         & .banner {
@@ -260,11 +259,32 @@ main {
             }
         }
 
-        & .comic {
+        & .comic-top {
+
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem 0;
+
+            & .comic {
+                width: 60%;
+            }
+
+            & .adv {
+                padding: 2rem;
+                text-align: end;
+                text-transform: uppercase;
+                color: var(--dc-light);
+
+                & img {
+                    width: 80%;
+                }
+
+            }
+
 
             & h3 {
                 text-transform: uppercase;
-                margin: 3rem 0 1rem 0;
+                margin-bottom: 0.5rem;
             }
 
             .price {

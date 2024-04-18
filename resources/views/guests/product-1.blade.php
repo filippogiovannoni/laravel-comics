@@ -10,16 +10,22 @@
                 <img src="{{ $comic['thumb'] }}" alt="comic_image">
                 <div class="gallery">View Gallery</div>
             </div>
-            <div class="comic">
-                <h3>{{ $comic['title'] }}</h3>
-                <div class="availability">
-                    <div class="price">
-                        <span>U.S Price: {{ $comic['price'] }}</span>
-                        <span>AVAILABLE</span>
+            <div class="comic-top">
+                <div class="comic">
+                    <h3>{{ $comic['title'] }}</h3>
+                    <div class="availability">
+                        <div class="price">
+                            <span>U.S Price: {{ $comic['price'] }}</span>
+                            <span>AVAILABLE</span>
+                        </div>
+                        <span>Check availability</span>
                     </div>
-                    <span>Check availability</span>
+                    <p>{{ $comic['description'] }}</p>
                 </div>
-                <p>{{ $comic['description'] }}</p>
+                <div class="adv">
+                    <span>Advertisement</span>
+                    <img src="{{ Vite::asset('resources/images/adv.jpg') }}" alt="">
+                </div>
             </div>
         </div>
     </section>
