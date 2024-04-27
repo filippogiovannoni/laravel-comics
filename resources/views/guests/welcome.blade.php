@@ -7,12 +7,14 @@
             <span>Current Series</span>
             <div class="row">
 
-                @foreach ($comics as $comic)
+                @foreach ($comics as $id => $comic)
                     <div class="col-2">
-                        <div class="card">
-                            <img src="{{ $comic['thumb'] }}" alt="">
-                            <span>{{ $comic['title'] }}</span>
-                        </div>
+                        <a href="{{ route('product') . $id }}">
+                            <div class="card">
+                                <img src="{{ $comic['thumb'] }}" alt="">
+                                <span>{{ $comic['title'] }}</span>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
             </div>

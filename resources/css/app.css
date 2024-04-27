@@ -126,6 +126,9 @@ header {
 /* Region Main */
 main {
 
+    position: relative;
+    z-index: 10;
+
     & .jumbotron {
         background-image: url('../images/jumbotron.jpg');
         background-size: cover;
@@ -147,6 +150,10 @@ main {
             font-weight: bold;
             margin: 1rem 0;
 
+        }
+
+        & a {
+            text-decoration: none;
         }
     }
 
@@ -212,6 +219,7 @@ main {
 
     #products {
         position: relative;
+        background-color: var(--dc-white);
 
         & .container {
             padding: 0 4rem;
@@ -263,7 +271,7 @@ main {
 
             display: flex;
             justify-content: space-between;
-            margin: 3rem 0;
+            padding: 2rem 0;
 
             & .comic {
                 width: 60%;
@@ -393,7 +401,6 @@ main {
 .footer-right>img {
     position: absolute;
     right: 150px;
-    width: 40%;
     top: -75px;
     z-index: 0;
 }

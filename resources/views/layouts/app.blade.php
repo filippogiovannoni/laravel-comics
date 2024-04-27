@@ -17,6 +17,8 @@
     {{-- Loading my styles --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/images/favicon.ico') }}" type="/x-icon">
+
 </head>
 
 <body class="antialiased">
